@@ -1,3 +1,6 @@
+<!-- Reusing most of code from P1 to create framework for style guide -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +25,7 @@
             <a class="REM" href="index.html">Portfolio</a>
         </div>
         <div class="nav-links">
-            <a  class="REM" href="index.html">Home</a>
+            <a class="REM" href="index.html">Home</a>
             <a class="REM" href="Projects">Projects</a>
             <a class="REM" href="contact">Contact</a>
             <a class="REM" href="about">About</a>
@@ -62,14 +65,14 @@
                 <h3>Navigation Link</h3>
 
                 <h4>CSS selector:</h4>
-                <p>.nav-button</p>
+                <p>.nav-links a</p>
 
                 <h4>Sample code:</h4>
-                <code>&lt;nav&gt;&lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;&lt;/nav&gt;</code>
+                <code>&lt;div class="nav-links"&gt;&lt;a href="#" class="REM"&gt;Default Button&lt;/a&gt;&lt;/div&gt;</code>
 
                 <h4>Rendered element:</h4>
-                <nav class="demo-nav-button">
-                    <a class="demo-nav-button" href="#">Default Button</a>
+                <nav>
+                    <a class="REM" href="index.html">Home</a>
                 </nav>
 
             </section>
@@ -128,9 +131,9 @@
                 <h4>CSS selector:</h4>
                 <p>.this-image</p>
                 <h4>Sample code:</h4>
-                <code>&lt;a class="image-link" href="#"&gt; &lt;img source="#" alt="image description" &gt; &lt;/a&gt;</code>
+                <code>&lt;a class="image-link" href="#"&gt; &lt;img class="projectImg" source="#" alt="image description" &gt; &lt;/a&gt;</code>
                 <h4>Rendered element:</h4>
-                <a class="image-link" href="#"><img class="productImg" src="images/earbuds.jpg" alt="earbuds"></a>
+                <a class="image-link" href="#"><img class="projectImg" src="img/poster.png" alt="Daisy 7094 poster"></a>
             </section>
 
 
@@ -197,16 +200,16 @@
 
             <section class="element">
                 <h3>Main Navigation</h3>
-                <nav class="demo-nav-bar">
+                <nav>
                     <div class="logo">
-                        <a href="index.html">Portfolio</a>
+                        <a class="REM" href="index.html">Portfolio</a>
                     </div>
                     <div class="nav-links">
-                        <a class="title" href="index.html">Home</a>
-                        <a href="Projects">Projects</a>
-                        <a href="contact">Contact</a>
-                        <a href="about">About</a>
-                        <a href="styleguide.html">Style Guide</a>
+                        <a class="REM" href="index.html">Home</a>
+                        <a class="REM" href="Projects">Projects</a>
+                        <a class="REM" href="contact">Contact</a>
+                        <a class="REM" href="about">About</a>
+                        <a class="REM" href="styleguide.html">Style Guide</a>
                     </div>
                 </nav>
             </section>
@@ -241,19 +244,19 @@
             <section class="element">
                 <div class="colours-box">
                     <div class="colours-1">
-                        <h2>#555</h2>
-                        <h4>Highlight Colour</h4>
+                        <h2>#555555</h2>
+                        <h4>Link Default Colour</h4>
                     </div>
                     <div class="colours-2">
                         <h2>#ffffff</h2>
                         <h4>Primary Colour</h4>
                     </div>
                     <div class="colours-3">
-                        <h2>#323232</h2>
-                        <h4>Button Colour</h4>
+                        <h2>#000000</h2>
+                        <h4>Link Highlight Colour</h4>
                     </div>
                     <div class="colours-4">
-                        <h2>#f1f1f1</h2>
+                        <h2>#f4f4f4</h2>
                         <h4>Secondary Colour</h4>
                     </div>
                 </div>
@@ -266,12 +269,10 @@
 
             <section class="element">
                 <div class="image-grid">
-                    <img class="demo-image" src="images/pic1.jpg" alt="picture 1">
-                    <img class="demo-image" src="images/pic2.jpg" alt="picture 2">
-                    <img class="demo-image" src="images/pic3.jpg" alt="picture 3">
-                    <img class="demo-image" src="images/pic4.jpg" alt="picture 4">
-                    <img class="demo-image" src="images/pic5.jpg" alt="picture 5">
-                    <img class="demo-image" src="images/pic6.jpg" alt="picture 6">
+                    <img class="demo-image" src="img/group.jpg" alt="picture 1">
+                    <img class="demo-image" src="img/inspire.png" alt="picture 2">
+                    <img class="demo-image" src="img/poster.png" alt="picture 3">
+                    <img class="demo-image" src="img/laptop.png" alt="picture 4">
                 </div>
             </section>
 
