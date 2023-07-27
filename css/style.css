@@ -30,6 +30,7 @@ header {
 
 body {
     font-family: 'Montserrat';
+    display: block;
 }
 
 h1,
@@ -74,15 +75,12 @@ nav a {
     color: black;
 }
 
-.logo {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
 
 .landing {
     min-width: 100%;
     min-height: 100%;
-    padding-top: 25vh;
+    padding-top: 30vh;
+    padding-bottom: 45vh;
 }
 
 /* underline link effect */
@@ -122,6 +120,21 @@ nav a {
     display: none;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.projectImg {
+    height: 50em;
+    padding: 0;
+    border: 2px solid #000;
+    border-radius: 0.3em;
+}
+
 
 
 /* Media quieres for smaller devices*/
@@ -140,6 +153,7 @@ nav a {
     }
     .landing {
         padding-top: 10vh;
+        padding-bottom: 70vh;
     }
     .toggle-collapse {
         float: right;
@@ -157,5 +171,13 @@ nav a {
     }
     .collapse {
         height: 40vh;
+    }
+    .projectImg {
+        height: auto;
+        width: 95vw;
+        padding: 0;
+        margin: 0 auto;
+        border: 2px solid #000;
+        border-radius: 0.3em;
     }
 }

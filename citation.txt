@@ -1,2 +1,8 @@
 animated text:
 https://css-tricks.com/snippets/css/typewriter-effect/
+
+responsive nav bar:
+https://www.youtube.com/watch?v=x-MFJhqRZ7s
+
+scroll down animation:
+https://unused-css.com/blog/animated-down-arrow/
