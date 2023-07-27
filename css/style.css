@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    /* colors */
+    --light-gray: #555555;
+
+    /* font styles */
+    --body-font: "Montserrat", sans-serif;
+    --heading-font: "REM", sans-serif;
+}
+
 /* Global */
 html {
     min-height: 100%;
@@ -18,6 +28,24 @@ header {
 
 body {
     font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--body-font);
+    color: var(--light-gray);
+}
+
+a:hover {
+    color: black;
 }
 
 /* navigation bar */
@@ -35,15 +63,10 @@ nav {
 }
 
 nav a {
-    color: #555555;
+    color: var(--light-gray);
     text-align: center;
     padding: 1rem 1.1rem;
     text-decoration: none;
-}
-
-
-nav a:hover {
-    color: black;
 }
 
 
@@ -53,4 +76,34 @@ nav a:hover {
     padding-top: 30vh;
 }
 
+/* underline link effect */
+.un {
+    display: inline-block;
+    position: relative;
+}
 
+.un::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--light-gray);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+
+.un:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.Montserrat {
+    font-family: 'Montserrat';
+}
+
+.REM {
+    font-family: 'REM';
+}

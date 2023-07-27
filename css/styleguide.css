@@ -17,9 +17,6 @@
     justify-content: center;
 }
 
-.checkout {
-    padding: 4rem;
-}
 
 /* title header */
 .title-text {
@@ -40,10 +37,6 @@ section {
     margin-bottom: 3rem;
 }
 
-/* font from https://www.cdnfonts.com/satoshi.font */
-body {
-    font-family: 'Satoshi', sans-serif;
-}
 
 
 
@@ -71,7 +64,6 @@ h4 {
 /* changed default width */
 
 p {
-    font-family: 'Noto Sans';
     margin-top: 0;
     max-width: 50%;
     padding: 1em;
@@ -203,68 +195,6 @@ code {
 /* 
     COMBINED ELEMENTS -------------------
   */
-/*  learned from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -16px;
-}
-
-.col-25 {
-    flex: 25%;
-}
-
-.col-50 {
-    flex: 50%;
-}
-
-.col-75 {
-    flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-    padding: 0 16px;
-}
-
-.container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
-
-input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-label {
-    margin-bottom: 10px;
-    display: block;
-}
-
-
-
-span.price {
-    float: right;
-    color: grey;
-}
-
-@media (max-width: 800px) {
-    .row {
-        flex-direction: column-reverse;
-    }
-
-    .col-25 {
-        margin-bottom: 20px;
-    }
-}
-
 
 
 /* 
@@ -337,16 +267,6 @@ span.price {
     color: white;
 }
 
-.satoshi-font {
-    font-family: 'satoshi';
-    font-size: 50px;
-}
-
-.noto-font {
-    font-family: 'noto sans';
-    font-size: 40px;
-    margin-bottom: 0;
-}
 
 .colours-box {
     padding: 2em;
@@ -388,4 +308,9 @@ span.price {
     padding: 0;
     border: 2px solid #000;
     height: 35rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 0;
 }
