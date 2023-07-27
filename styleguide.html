@@ -24,12 +24,17 @@
         <div class="logo">
             <a class="REM" href="index.html">Portfolio</a>
         </div>
-        <div class="nav-links">
-            <a class="REM" href="index.html">Home</a>
-            <a class="REM" href="Projects">Projects</a>
-            <a class="REM" href="contact">Contact</a>
-            <a class="REM" href="about">About</a>
-            <a class="REM" href="styleguide.html">Style Guide</a>
+        <button class="toggle-collapse">
+            <img src="icons/menu.svg" alt="menu icon">
+        </button>
+        <div class="navbar-collapse">
+            <div class="nav-links">
+                <a class="REM nav-item" href="index.html">Home</a>
+                <a class="REM nav-item" href="Projects">Projects</a>
+                <a class="REM nav-item" href="contact">Contact</a>
+                <a class="REM nav-item" href="about">About</a>
+                <a class="REM nav-item" href="styleguide.html">Style Guide</a>
+            </div>
         </div>
     </nav>
 
@@ -68,11 +73,11 @@
                 <p>.nav-links a</p>
 
                 <h4>Sample code:</h4>
-                <code>&lt;div class="nav-links"&gt;&lt;a href="#" class="REM"&gt;Default Button&lt;/a&gt;&lt;/div&gt;</code>
+                <code>&lt;div class="nav-links"&gt;&lt;a href="#" class="REM nav-item"&gt;Default Button&lt;/a&gt;&lt;/div&gt;</code>
 
                 <h4>Rendered element:</h4>
                 <nav>
-                    <a class="REM" href="index.html">Home</a>
+                    <a class="REM nav-item" href="index.html">Home</a>
                 </nav>
 
             </section>
@@ -280,7 +285,17 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        $(document).ready(function () {
+            $('.toggle-collapse').click(function () {
+                $('.navbar-collapse').toggleClass("collapse");
+            })
+        });
+    </script>
 </body>
 
 <footer>

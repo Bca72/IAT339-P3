@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 :root {
 
     /* colors */
@@ -30,7 +32,10 @@ body {
     font-family: 'Montserrat';
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--heading-font);
 }
 
@@ -73,7 +78,7 @@ nav a {
 .landing {
     min-width: 100%;
     min-height: 100%;
-    padding-top: 30vh;
+    padding-top: 20vh;
 }
 
 /* underline link effect */
@@ -106,4 +111,42 @@ nav a {
 
 .REM {
     font-family: 'REM';
+}
+
+.toggle-collapse {
+    float: right;
+    display: none;
+}
+
+
+
+
+/* mobile screens nav from https://www.youtube.com/watch?v=x-MFJhqRZ7s*/
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+    .logo {
+        display: inline-block;
+        float: none
+    }
+    .landing {
+        padding-top: 10vh;
+    }
+    .toggle-collapse {
+        float: right;
+        display: inline;
+    }
+    nav .navbar-collapse .nav-item {
+        display: block;
+    }
+    .navbar-collapse {
+        width: 100%;
+        overflow: hidden;
+        height: 0vh;
+        transition: all 500ms ease;
+    }
+    .collapse {
+        height: 22vh;
+    }
 }

@@ -1,5 +1,6 @@
 /* referenced from: https://css-tricks.com/snippets/css/typewriter-effect/ */
-.fade-in-text, .fade-in-text-2 {
+.fade-in-text,
+.fade-in-text-2 {
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, .75);
     font-size: 5rem;
@@ -58,4 +59,21 @@
     to {
         border-right-color: transparent;
     }
+}
+
+
+/* mobile screens */
+@media screen and (max-width: 600px) {
+
+    .fade-in-text,
+    .fade-in-text-2 {
+        margin: 0 auto;
+        border-right: 2px solid rgba(255, 255, 255, .75);
+        font-size: 1.5em;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);
+    }
+
+
 }
