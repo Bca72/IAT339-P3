@@ -1,0 +1,61 @@
+/* referenced from: https://css-tricks.com/snippets/css/typewriter-effect/ */
+.fade-in-text, .fade-in-text-2 {
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) 0s 12 normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(29, 29, 29, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.anim-typewriter-2 {
+    animation: typewriter-2 4s steps(44) 6s 1 normal both,
+        blinkTextCursor-2 500ms steps(44) 6s infinite normal;
+}
+
+@keyframes typewriter-2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 13em;
+    }
+}
+
+@keyframes blinkTextCursor-2 {
+    from {
+        border-right-color: rgba(29, 29, 29, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}

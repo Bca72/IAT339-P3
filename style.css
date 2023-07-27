@@ -53,6 +53,10 @@ nav a:hover {
     padding-top: 30vh;
 }
 
+.home-text {
+    
+}
+
 /* referenced from: https://css-tricks.com/snippets/css/typewriter-effect/ */
 .fade-in-text, .fade-in-text-2 {
     margin: 0 auto;
