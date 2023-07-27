@@ -22,15 +22,14 @@ html {
     min-width: 100%;
 }
 
+body {
+    font-family: 'Montserrat';
+    display: block;
+}
 
 header {
     font-family: 'REM';
     font-size: 1.2em;
-}
-
-body {
-    font-family: 'Montserrat';
-    display: block;
 }
 
 h1,
@@ -120,11 +119,15 @@ nav a {
     display: none;
 }
 
+figure{
+    padding: 0;
+    margin: 2em;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     padding: 0;
 }
 
@@ -135,6 +138,29 @@ nav a {
     border-radius: 0.3em;
 }
 
+/* footer */
+footer {
+    border-top: 2px solid var(--light-gray);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    font-size: 1.25rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link+.footer-link {
+    margin-left: 1em;
+}
 
 
 /* Media quieres for smaller devices*/
@@ -172,12 +198,34 @@ nav a {
     .collapse {
         height: 40vh;
     }
+    figure{
+        padding: 0;
+        margin: 0;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
     .projectImg {
         height: auto;
-        width: 95vw;
+        width: 90vw;
         padding: 0;
-        margin: 0 auto;
         border: 2px solid #000;
         border-radius: 0.3em;
+    }
+    footer {
+        border-top: 2px solid var(--light-gray);
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-link {
+        font-size: 1rem;
+    }
+    footer p {
+        font-size: 1rem;
     }
 }
