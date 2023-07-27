@@ -1,0 +1,56 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Global */
+html {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+header {
+    font-family: 'REM';
+    font-size: 1.2em;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    min-width: 100%;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 2em;
+    color: black;
+}
+
+nav a {
+    color: #555555;
+    text-align: center;
+    padding: 1rem 1.1rem;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: black;
+}
+
+
+.landing {
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 30vh;
+}
+
+
