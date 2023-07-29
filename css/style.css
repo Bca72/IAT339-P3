@@ -211,12 +211,6 @@ figure {
     flex-direction: column;
 }
 
-.about-block h2 {
-    font-size: 2.5rem;
-    margin: 0;
-    justify-content: flex-start;
-}
-
 .about-block p {
     max-width: 50vw;
     font-size: 2rem;
