@@ -116,6 +116,16 @@ nav a {
     font-family: 'REM';
 }
 
+.section-title {
+    font-size: 2rem;
+    min-width: 100vw;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--secondary-color);
+}
+
 .toggle-collapse {
     float: right;
     display: none;
@@ -223,6 +233,11 @@ footer p {
     }
     .collapse {
         height: 40vh;
+    }
+    .section-title {
+        font-size: 1.5rem;
+        min-width: 100vw;
+        text-align: center;
     }
     figure{
         padding: 0;
