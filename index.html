@@ -40,36 +40,39 @@
 
     </header>
 
-    <section class="landing">
-        <div class="home-text">
-            <h1 class="fade-in-text anim-typewriter Montserrat">
-                Hi, I'm Benson Chow.
-            </h1>
-            <h1 class="fade-in-text-2 anim-typewriter-2 Montserrat">
-                Welcome to my Portfolio.
-            </h1>
-        </div>
-        <div class="scroll-down"></div>
-    </section>
+    <main>
+        <section class="landing">
+            <div class="home-text">
+                <h1 class="fade-in-text anim-typewriter Montserrat">
+                    Hi, I'm Benson Chow.
+                </h1>
+                <h1 class="fade-in-text-2 anim-typewriter-2 Montserrat">
+                    Welcome to my Portfolio.
+                </h1>
+            </div>
+            <div class="arrow bounce fade"></div>
+        </section>
 
-    <section id="projects" class="projects">
-        <figure>
-            <a href="daisy.html" class="image-link"><img class="projectImg" src="img/poster.png" alt="poster image"></a>
-            <figcaption>
-                <h2 class="project-title"><a href="daisy.html" class="REM">Daisy 7094</a></h2>
-                <p class="project-description">A group project made for an Interactive Arts class</p>
-            </figcaption>
-        </figure>
+        <section id="projects" class="projects">
+            <figure>
+                <a href="daisy.html" class="image-link"><img class="projectImg" src="img/poster.png"
+                        alt="poster image"></a>
+                <figcaption>
+                    <h2 class="project-title"><a href="daisy.html" class="REM">Daisy 7094</a></h2>
+                    <p class="project-description">A group project made for an Interactive Arts class</p>
+                </figcaption>
+            </figure>
 
-        <figure>
-            <a href="pavilion.html" class="image-link"><img class="projectImg" src="img/pavilion2.png" alt="poster image"></a>
-            <figcaption>
-                <h2 class="project-title"><a href="pavilion.html" class="REM">Park Pavilion</a></h2>
-                <p class="project-description">A group project made for a Spacial Design class</p>
-            </figcaption>
-        </figure>
-    </section>
-
+            <figure>
+                <a href="pavilion.html" class="image-link"><img class="projectImg" src="img/pavilion2.png"
+                        alt="poster image"></a>
+                <figcaption>
+                    <h2 class="project-title"><a href="pavilion.html" class="REM">Park Pavilion</a></h2>
+                    <p class="project-description">A group project made for a Spacial Design class</p>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
 
 
     <footer>
@@ -81,8 +84,6 @@
         </div>
     </footer>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -90,12 +91,26 @@
 
     <script>
         $(document).ready(function () {
+            if (window.location.hash != "#projects") {
+                setTimeout(function () {
+                    $('.arrow').removeClass('fade');
+                }, 9500);
+            }
             $('.toggle-collapse').click(function () {
                 $('.navbar-collapse').toggleClass("collapse");
             })
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 1) {
+                    $('.arrow').addClass('fade');
+                } else {
+                    $('.arrow').removeClass('fade');
+                }
+            })
         });
     </script>
-    <script src="myscripts.js"></script>
+
+
 </body>
 
 </html>
