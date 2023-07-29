@@ -203,7 +203,7 @@ figure {
     justify-content: space-between;
     width: 80vw;
     margin: auto;
-    padding-top: 2rem;
+    padding-top: 0;
 }
 
 .about-text {
