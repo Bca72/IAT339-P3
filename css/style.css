@@ -27,6 +27,7 @@ html {
 body {
     font-family: 'Montserrat';
     display: block;
+    font-size: 1rem;
 }
 
 header {
@@ -152,9 +153,34 @@ figure {
 .project-description {
     margin-top: 0;
     margin-bottom: 2rem;
-    font-size: 14pt;
+    font-size: 1.2rem;
 }
 
+.title {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.title h1 {
+    font-size: 3rem;
+    padding: 3rem 0;
+    margin: 0;
+    width: 80vw;
+}
+
+.section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.section-text p {
+    margin: 0;
+    max-width: 80vw;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+}
 
 /* footer */
 footer {
