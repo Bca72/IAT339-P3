@@ -6,3 +6,9 @@ https://www.youtube.com/watch?v=x-MFJhqRZ7s
 
 scroll down animation:
 https://unused-css.com/blog/animated-down-arrow/
+
+icons used are from:
+https://iconmonstr.com/
+https://iconmonstr.com/linkedin-3-svg/
+https://iconmonstr.com/email-3-svg/
+https://iconmonstr.com/github-3-svg/
