@@ -3,7 +3,7 @@
 .fade-in-text-2 {
     margin: 0 auto;
     border-right: 5px solid rgba(255, 255, 255, .75);
-    font-size: 5rem;
+    font-size: 6rem;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
