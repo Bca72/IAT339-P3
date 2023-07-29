@@ -151,6 +151,14 @@ figure{
     font-size: 14pt;
 }
 
+.image-link:hover {
+    opacity: 0.85;
+}
+
+.image-link:focus {
+    opacity: 0.2;
+}
+
 /* footer */
 footer {
     border-top: 2px solid var(--light-gray);
