@@ -292,7 +292,12 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
+    }
+    .projects figure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center
     }
 
     footer {
