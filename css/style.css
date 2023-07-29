@@ -66,7 +66,7 @@ a:hover {
 nav {
     display: flex;
     min-width: 100%;
-    padding: 2rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -78,9 +78,24 @@ nav a {
     text-decoration: none;
 }
 
+nav img {
+    max-width: 4em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    float: none;
+}
+
 .logo a {
+    padding: 0;
+}
+
+.logo .name {
     font-size: 2.5em;
     color: black;
+    padding: 0;
 }
 
 
@@ -136,7 +151,6 @@ nav a {
 }
 
 .toggle-collapse {
-    float: right;
     display: none;
 }
 
@@ -254,24 +268,23 @@ footer p {
         display: block;
     }
 
-    .logo {
-        display: inline-block;
-        float: none
-    }
-
-    .logo a {
+    .logo .name {
         font-size: 1.5em;
         color: black;
     }
-
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .landing {
         padding-top: 10vh;
         padding-bottom: 70vh;
     }
 
     .toggle-collapse {
-        float: right;
-        display: inline;
+        display: block;
+        max-height: 2em;  
     }
 
     nav .navbar-collapse .nav-item {
