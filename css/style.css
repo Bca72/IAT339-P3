@@ -131,10 +131,11 @@ nav a {
     display: none;
 }
 
-figure{
+figure {
     padding: 0;
     margin: 2em;
 }
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -154,13 +155,6 @@ figure{
     font-size: 14pt;
 }
 
-.image-link:hover {
-    opacity: 0.85;
-}
-
-.image-link:focus {
-    opacity: 0.2;
-}
 
 /* footer */
 footer {
@@ -198,25 +192,31 @@ footer p {
     nav {
         display: block;
     }
+
     .logo {
         display: inline-block;
         float: none
     }
+
     .logo a {
         font-size: 1.5em;
         color: black;
     }
+
     .landing {
         padding-top: 10vh;
         padding-bottom: 70vh;
     }
+
     .toggle-collapse {
         float: right;
         display: inline;
     }
+
     nav .navbar-collapse .nav-item {
         display: block;
     }
+
     .navbar-collapse {
         width: 100%;
         padding-top: 1em;
@@ -224,31 +224,29 @@ footer p {
         height: 0vh;
         transition: all 500ms ease;
     }
+
     .collapse {
         height: 40vh;
     }
+
     .section-title {
         font-size: 1.5rem;
         min-width: 100vw;
         text-align: center;
     }
-    figure{
+
+    figure {
         padding: 0;
         margin: 0;
     }
+
     .projects {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
-    .projectImg {
-        height: auto;
-        width: 90vw;
-        padding: 0;
-        border: 2px solid #000;
-        border-radius: 0.3em;
-    }
+
     footer {
         border-top: 2px solid var(--light-gray);
         padding: 1rem;
@@ -256,9 +254,11 @@ footer p {
         display: flex;
         justify-content: space-between;
     }
+
     .footer-link {
         font-size: 1rem;
     }
+
     footer p {
         font-size: 1rem;
     }
