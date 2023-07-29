@@ -1,6 +1,6 @@
 /* Media quieres for smaller devices*/
 /* mobile screens nav from https://www.youtube.com/watch?v=x-MFJhqRZ7s*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     nav {
         display: block;
     }
@@ -150,13 +150,13 @@
 
 
 /* mobile screen animations*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
 
     .fade-in-text,
     .fade-in-text-2 {
         margin: 0 auto;
         border-right: 2px solid rgba(255, 255, 255, .75);
-        font-size: 1.5em;
+        font-size: 2em;
         white-space: nowrap;
         overflow: hidden;
         transform: translateY(-50%);
