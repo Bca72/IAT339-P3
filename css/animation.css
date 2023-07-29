@@ -12,7 +12,7 @@
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 2s steps(44) 500ms 1 normal both,
+  animation: typewriter 2s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) 0s 7 normal;
 }
 
