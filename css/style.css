@@ -233,16 +233,26 @@ figure {
 
 /* footer */
 footer {
+    display: flex;
     border-top: 2px solid var(--light-gray);
     padding: 2rem 2.5rem;
     text-align: center;
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
     align-items: center;
 }
 
 .footer-link {
     font-size: 1.25rem;
+}
+
+footer img {
+    height: 2em;
+    margin-top: 5px;
 }
 
 footer p {
@@ -252,7 +262,7 @@ footer p {
 }
 
 .footer-link+.footer-link {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .black {
@@ -339,6 +349,10 @@ footer p {
 
     .footer-link {
         font-size: 1rem;
+    }
+
+    .footer-link+.footer-link {
+        margin-left: 1em;
     }
 
     footer p {
