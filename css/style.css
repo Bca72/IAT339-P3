@@ -189,17 +189,18 @@ figure {
     justify-content: space-between;
     width: 80vw;
     margin: auto;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .about-text {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .about-block h2 {
     font-size: 3rem;
     margin: 0;
+    justify-content: flex-start;
 }
 
 .about-block p {
@@ -210,7 +211,7 @@ figure {
 }
 
 .mypic {
-    max-width: 25vw;
+    max-height: 40vh;
     border: 2px solid #000;
     border-radius: 0.3em;
 }
