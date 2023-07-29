@@ -25,18 +25,21 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a class="REM" href="index.html">Benson Chow</a>
+            <div class="mobile-nav">
+                <div class="logo">
+                    <a href="index.html"><img src="icons/LogoWBG.svg"></a>
+                    <a class="REM name" href="index.html">Benson Chow</a>
+                </div>
+                <button class="toggle-collapse">
+                    <img src="icons/menu.svg" alt="menu icon">
+                </button>
             </div>
-            <button class="toggle-collapse">
-                <img src="icons/menu.svg" alt="menu icon">
-            </button>
             <div class="navbar-collapse">
                 <div class="nav-links">
                     <a class="REM nav-item" href="index.html">Home</a>
                     <a class="REM nav-item" href="index.html#projects">Projects</a>
                     <a class="REM nav-item" href="about.html">About</a>
-                    <a class="REM nav-item" href="contact.html">Contact</a>
+                    <a class="REM nav-item" href="about.html#contact">Contact</a>
                 </div>
             </div>
         </nav>
@@ -44,252 +47,258 @@
     </header>
 
     <main>
-    <div class="grid">
-        <h1 >Style Guide</h1>
+        <div class="grid">
+            <h1>Style Guide</h1>
 
-        <p>Style guide for my Portfolio website</p>
+            <p>Style guide for my Portfolio website</p>
 
-        <!-- INTERACTIVE ELEMENTS SECTION // -->
-        <section id="interactive_elements">
-            <h2 class="general">Interactive Elements</h2>
+            <!-- INTERACTIVE ELEMENTS SECTION // -->
+            <section id="interactive_elements">
+                <h2 class="general">Interactive Elements</h2>
 
-            <!-- Used P2 as reference -->
-            <section class="element">
-                <h3>In-text link</h3>
-                <h4>CSS selector:</h4>
-                <p>.un</p>
+                <!-- Used P2 as reference -->
+                <section class="element">
+                    <h3>In-text link</h3>
+                    <h4>CSS selector:</h4>
+                    <p>.un</p>
 
-                <h4>Sample code:</h4>
-                <code>&lt;a href="#" class="un"&gt;text&lt;/a&gt;</code>
-                <h4>Rendered element:</h4>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="un">text link</a>
+                    <h4>Sample code:</h4>
+                    <code>&lt;a href="#" class="un"&gt;text&lt;/a&gt;</code>
+                    <h4>Rendered element:</h4>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="un">text link</a>
 
-            </section>
+                </section>
 
 
-            <!-- Default Button styling section -->
-            <section class="element">
+                <!-- Default Button styling section -->
+                <section class="element">
 
-                <h3>Navigation Link</h3>
+                    <h3>Navigation Link</h3>
 
-                <h4>CSS selector:</h4>
-                <p>.nav-links a</p>
+                    <h4>CSS selector:</h4>
+                    <p>.nav-links a</p>
 
-                <h4>Sample code:</h4>
-                <code>&lt;div class="nav-links"&gt;&lt;a href="#" class="REM nav-item"&gt;Default Button&lt;/a&gt;&lt;/div&gt;</code>
+                    <h4>Sample code:</h4>
+                    <code>&lt;div class="nav-links"&gt;&lt;a href="#" class="REM nav-item"&gt;Default Button&lt;/a&gt;&lt;/div&gt;</code>
 
-                <h4>Rendered element:</h4>
-                <nav>
-                    <a class="REM nav-item" href="index.html">Home</a>
-                </nav>
+                    <h4>Rendered element:</h4>
+                    <nav>
+                        <a class="REM nav-item" href="index.html">Home</a>
+                    </nav>
 
-            </section>
+                </section>
 
-            <!-- Used W3CSchools as reference -->
-            <section class="element">
-                <h3>Submit/Reset Buttons</h3>
-                <h4>CSS selector:</h4>
-                <p>.buttonSubmit, .buttonReset</p>
+                <!-- Used W3CSchools as reference -->
+                <section class="element">
+                    <h3>Submit/Reset Buttons</h3>
+                    <h4>CSS selector:</h4>
+                    <p>.buttonSubmit, .buttonReset</p>
 
-                <h4>Sample code:</h4>
-                <code>&lt;form&gt; &lt;input class="buttonSubmit" type="Submit"&gt; &lt;/form&gt; <br>
+                    <h4>Sample code:</h4>
+                    <code>&lt;form&gt; &lt;input class="buttonSubmit" type="Submit"&gt; &lt;/form&gt; <br>
               &lt;form&gt; &lt;input class="buttonReset" type="Reset"&gt; &lt;/form&gt;</code>
-                <h4>Rendered element:</h4>
-                <form>
-                    <input class="buttonSubmit" type="submit">
-                    <input class="buttonReset" type="reset">
-                </form>
-            </section>
+                    <h4>Rendered element:</h4>
+                    <form>
+                        <input class="buttonSubmit" type="submit">
+                        <input class="buttonReset" type="reset">
+                    </form>
+                </section>
 
-            <!-- Used W3CSchools as reference -->
-            <section class="element">
-                <h3>Text Input Field with Label</h3>
-                <h4>CSS selector:</h4>
-                <p>.tInput</p>
+                <!-- Used W3CSchools as reference -->
+                <section class="element">
+                    <h3>Text Input Field with Label</h3>
+                    <h4>CSS selector:</h4>
+                    <p>.tInput</p>
 
-                <h4>Sample code:</h4>
-                <code>&lt;form class="tInput"&gt; &lt;input type="text" id="text-input"&gt; <br>
+                    <h4>Sample code:</h4>
+                    <code>&lt;form class="tInput"&gt; &lt;input type="text" id="text-input"&gt; <br>
               &lt;label for="text-input"&gt;Label &lt;/label&gt;&lt;/form&gt;</code>
-                <h4>Rendered element:</h4>
-                <form class="tInput">
-                    <label for="text-input">Input Text</label>
-                    <input type="text" id="text-input" placeholder="Enter text here">
-                </form>
-            </section>
+                    <h4>Rendered element:</h4>
+                    <form class="tInput">
+                        <label for="text-input">Input Text</label>
+                        <input type="text" id="text-input" placeholder="Enter text here">
+                    </form>
+                </section>
 
-            <!-- Used W3CSchools as reference -->
-            <section class="element">
-                <h3>Radio Button with Label</h3>
-                <h4>CSS selector:</h4>
-                <p>.radio</p>
+                <!-- Used W3CSchools as reference -->
+                <section class="element">
+                    <h3>Radio Button with Label</h3>
+                    <h4>CSS selector:</h4>
+                    <p>.radio</p>
 
-                <h4>Sample code:</h4>
-                <code>&lt;form class="radio"&gt; &lt;input type="Radio" id="select"&gt; <br> 
+                    <h4>Sample code:</h4>
+                    <code>&lt;form class="radio"&gt; &lt;input type="Radio" id="select"&gt; <br> 
               &lt;label for="select"&gt;Select&lt;/label&gt; &lt;/form&gt;</code>
-                <h4>Rendered element:</h4>
-                <form class="radio">
-                    <input type="radio" id="select">
-                    <label for="select">Select</label><br>
-                </form>
-            </section>
+                    <h4>Rendered element:</h4>
+                    <form class="radio">
+                        <input type="radio" id="select">
+                        <label for="select">Select</label><br>
+                    </form>
+                </section>
 
-            <!-- Used W3CSchools as reference -->
-            <section class="element">
-                <h3>Image as a Link</h3>
-                <h4>CSS selector:</h4>
-                <p>.this-image</p>
-                <h4>Sample code:</h4>
-                <code>&lt;a class="image-link" href="#"&gt; &lt;img class="projectImg" source="#" alt="image description" &gt; &lt;/a&gt;</code>
-                <h4>Rendered element:</h4>
-                <div class="image-box">
-                    <a href="#"><img src="img/poster.png"
-                            alt="Daisy 7094 poster"></a>
-                </div>
-            </section>
-
-
-        </section>
-        <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-        <!-- TEXT ELEMENTS SECTION // -->
-        <section id="text_elements">
-            <h2 class="general">Text Elements</h2>
-
-            <section class="element">
-                <h3>Headings</h3>
-                <h4>CSS selector:</h4>
-                <p>h1, h2, h3, h4</p>
-                <h4>Sample code:</h4>
-                <code>&lt;h1&gt; sample text &lt;/h1&gt;</code>
-                <h4>Rendered element:</h4>
-
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3 class="in">Heading 3</h3>
-                <h4>Heading 4</h4>
-
-            </section>
-
-            <section class="element">
-                <h3>Paragraphs</h3>
-                <h4>CSS selector:</h4>
-                <p>p</p>
-                <h4>Sample code:</h4>
-                <code>&lt;p&gt; paragraph &lt;/p&gt;</code>
-                <h4>Rendered element:</h4>
-                <p>Lorem ipsum dolor sit amet. Qui eius odit est possimus facilis 33 tempore odit. In voluptas tempora
-                    33 repellat dignissimos qui quia saepe sed soluta iure qui assumenda laborum vel quia commodi in
-                    delectus omnis. Aut consectetur unde eos quidem perspiciatis non quis quaerat quo reiciendis magnam.
-                </p>
-            </section>
-
-            <section class="element">
-                <h3>Numbered Lists</h3>
-                <h4>CSS selector:</h4>
-                <p>ol</p>
-                <h4>Sample code:</h4>
-                <code>&lt;ol&gt; &lt;li&gt; item 1 &lt;/li&gt; &lt;/ol&gt;</code>
-                <h4>Rendered element:</h4>
-                <ol>
-                    <li>First Item</li>
-                    <li>Second Item</li>
-                    <li>Third Item</li>
-                </ol>
-
-            </section>
-
-        </section>
-        <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-        <!-- COMBINED ELEMENTS SECTION // -->
-        <section id="combined_elements">
-            <h2 class="general">Combined Elements</h2>
-
-            <section class="element">
-                <h3>Main Navigation</h3>
-                <nav>
-                    <div class="logo">
-                        <a class="REM" href="index.html">Portfolio</a>
+                <!-- Used W3CSchools as reference -->
+                <section class="element">
+                    <h3>Image as a Link</h3>
+                    <h4>CSS selector:</h4>
+                    <p>.this-image</p>
+                    <h4>Sample code:</h4>
+                    <code>&lt;a class="image-link" href="#"&gt; &lt;img class="projectImg" source="#" alt="image description" &gt; &lt;/a&gt;</code>
+                    <h4>Rendered element:</h4>
+                    <div class="image-box">
+                        <a href="#"><img src="img/poster.png" alt="Daisy 7094 poster"></a>
                     </div>
-                    <div class="nav-links">
-                        <a class="REM" href="#">Home</a>
-                        <a class="REM" href="#">Projects</a>
-                        <a class="REM" href="#">Contact</a>
-                        <a class="REM" href="#">About</a>
-                        <a class="REM" href="#">Style Guide</a>
-                    </div>
-                </nav>
+                </section>
+
+
+            </section>
+            <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+            <!-- TEXT ELEMENTS SECTION // -->
+            <section id="text_elements">
+                <h2 class="general">Text Elements</h2>
+
+                <section class="element">
+                    <h3>Headings</h3>
+                    <h4>CSS selector:</h4>
+                    <p>h1, h2, h3, h4</p>
+                    <h4>Sample code:</h4>
+                    <code>&lt;h1&gt; sample text &lt;/h1&gt;</code>
+                    <h4>Rendered element:</h4>
+
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3 class="in">Heading 3</h3>
+                    <h4>Heading 4</h4>
+
+                </section>
+
+                <section class="element">
+                    <h3>Paragraphs</h3>
+                    <h4>CSS selector:</h4>
+                    <p>p</p>
+                    <h4>Sample code:</h4>
+                    <code>&lt;p&gt; paragraph &lt;/p&gt;</code>
+                    <h4>Rendered element:</h4>
+                    <p>Lorem ipsum dolor sit amet. Qui eius odit est possimus facilis 33 tempore odit. In voluptas
+                        tempora
+                        33 repellat dignissimos qui quia saepe sed soluta iure qui assumenda laborum vel quia commodi in
+                        delectus omnis. Aut consectetur unde eos quidem perspiciatis non quis quaerat quo reiciendis
+                        magnam.
+                    </p>
+                </section>
+
+                <section class="element">
+                    <h3>Numbered Lists</h3>
+                    <h4>CSS selector:</h4>
+                    <p>ol</p>
+                    <h4>Sample code:</h4>
+                    <code>&lt;ol&gt; &lt;li&gt; item 1 &lt;/li&gt; &lt;/ol&gt;</code>
+                    <h4>Rendered element:</h4>
+                    <ol>
+                        <li>First Item</li>
+                        <li>Second Item</li>
+                        <li>Third Item</li>
+                    </ol>
+
+                </section>
+
+            </section>
+            <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+            <!-- COMBINED ELEMENTS SECTION // -->
+            <section id="combined_elements">
+                <h2 class="general">Combined Elements</h2>
+
+                <section class="element">
+                    <h3>Main Navigation</h3>
+                    <nav>
+                        <div class="logo">
+                            <a class="REM" href="index.html">Portfolio</a>
+                        </div>
+                        <div class="nav-links">
+                            <a class="REM" href="#">Home</a>
+                            <a class="REM" href="#">Projects</a>
+                            <a class="REM" href="#">Contact</a>
+                            <a class="REM" href="#">About</a>
+                            <a class="REM" href="#">Style Guide</a>
+                        </div>
+                    </nav>
+                </section>
+
             </section>
 
-        </section>
 
 
+            <section id="fonts">
+                <h2 class="general">Fonts</h2>
 
-        <section id="fonts">
-            <h2 class="general">Fonts</h2>
+                <section class="element">
+                    <h1>REM</h1>
+                    <h2> Used as the font for header elements </h2>
+                    <h1 class="Montserrat">Montserrat</h1>
+                    <p> Used as the font for body text. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis
+                        eget velit aliquet. Tincidunt eget nullam non nisi. Dictumst vestibulum rhoncus est pellentesque
+                        elit ullamcorper dignissim cras tincidunt. Ornare arcu odio ut sem nulla. Aliquam sem fringilla
+                        ut
+                        morbi tincidunt augue interdum velit. Consequat id porta nibh venenatis cras sed felis eget
+                        velit.
+                        Sagittis id consectetur purus ut faucibus pulvinar. Mauris sit amet massa vitae. Eros donec ac
+                        odio
+                        tempor orci. A pellentesque sit amet porttitor eget. Lacus viverra vitae congue eu consequat ac
+                        felis. A cras semper auctor neque vitae tempus quam pellentesque. Eget gravida cum sociis
+                        natoque
+                        penatibus et.</p>
+                </section>
 
-            <section class="element">
-                <h1>REM</h1>
-                <h2> Used as the font for header elements </h2>
-                <h1 class="Montserrat">Montserrat</h1>
-                <p> Used as the font for body text. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis
-                    eget velit aliquet. Tincidunt eget nullam non nisi. Dictumst vestibulum rhoncus est pellentesque
-                    elit ullamcorper dignissim cras tincidunt. Ornare arcu odio ut sem nulla. Aliquam sem fringilla ut
-                    morbi tincidunt augue interdum velit. Consequat id porta nibh venenatis cras sed felis eget velit.
-                    Sagittis id consectetur purus ut faucibus pulvinar. Mauris sit amet massa vitae. Eros donec ac odio
-                    tempor orci. A pellentesque sit amet porttitor eget. Lacus viverra vitae congue eu consequat ac
-                    felis. A cras semper auctor neque vitae tempus quam pellentesque. Eget gravida cum sociis natoque
-                    penatibus et.</p>
             </section>
 
-        </section>
+            <section id="colours">
+                <h2 class="general">Colours</h2>
 
-        <section id="colours">
-            <h2 class="general">Colours</h2>
+                <section class="element">
+                    <div class="colours-box">
+                        <div class="colours-1">
+                            <h2>#555555</h2>
+                            <h4>Link Default Colour</h4>
+                        </div>
+                        <div class="colours-2">
+                            <h2>#ffffff</h2>
+                            <h4>Primary Colour</h4>
+                        </div>
+                        <div class="colours-3">
+                            <h2>#000000</h2>
+                            <h4>Link Highlight Colour</h4>
+                        </div>
+                        <div class="colours-4">
+                            <h2>#f4f4f4</h2>
+                            <h4>Secondary Colour</h4>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="element">
-                <div class="colours-box">
-                    <div class="colours-1">
-                        <h2>#555555</h2>
-                        <h4>Link Default Colour</h4>
-                    </div>
-                    <div class="colours-2">
-                        <h2>#ffffff</h2>
-                        <h4>Primary Colour</h4>
-                    </div>
-                    <div class="colours-3">
-                        <h2>#000000</h2>
-                        <h4>Link Highlight Colour</h4>
-                    </div>
-                    <div class="colours-4">
-                        <h2>#f4f4f4</h2>
-                        <h4>Secondary Colour</h4>
-                    </div>
-                </div>
             </section>
 
-        </section>
+            <section id="images">
+                <h2 class="general">Images</h2>
 
-        <section id="images">
-            <h2 class="general">Images</h2>
+                <section class="element">
+                    <div class="image-grid">
+                        <img class="demo-image" src="img/group.jpg" alt="picture 1">
+                        <img class="demo-image" src="img/inspire.png" alt="picture 2">
+                        <img class="demo-image" src="img/poster.png" alt="picture 3">
+                        <img class="demo-image" src="img/laptop.png" alt="picture 4">
+                    </div>
+                </section>
 
-            <section class="element">
-                <div class="image-grid">
-                    <img class="demo-image" src="img/group.jpg" alt="picture 1">
-                    <img class="demo-image" src="img/inspire.png" alt="picture 2">
-                    <img class="demo-image" src="img/poster.png" alt="picture 3">
-                    <img class="demo-image" src="img/laptop.png" alt="picture 4">
-                </div>
             </section>
 
-        </section>
-
-    </div>
+        </div>
 
     </main>
     <footer>
