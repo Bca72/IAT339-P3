@@ -10,6 +10,7 @@
 
     /* colors */
     --light-gray: #555555;
+    --secondary-color: #f4f4f4;
 
     /* font styles */
     --body-font: "Montserrat", sans-serif;
@@ -174,6 +175,9 @@ footer p {
     margin-left: 1em;
 }
 
+.black {
+    color: #000;
+}
 
 /* Media quieres for smaller devices*/
 /* mobile screens nav from https://www.youtube.com/watch?v=x-MFJhqRZ7s*/
