@@ -2,7 +2,7 @@
 .fade-in-text,
 .fade-in-text-2 {
     margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, .75);
+    border-right: 5px solid rgba(255, 255, 255, .75);
     font-size: 5rem;
     white-space: nowrap;
     overflow: hidden;
