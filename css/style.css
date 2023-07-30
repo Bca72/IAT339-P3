@@ -149,6 +149,9 @@ nav img {
 .bg-light {
     background-color: var(--secondary-color);
 }
+.bg-white {
+    background-color: white;
+}
 
 .toggle-collapse {
     display: none;
