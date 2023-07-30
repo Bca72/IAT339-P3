@@ -256,15 +256,6 @@ figure {
     margin-left: 4rem;
 }
 
-.project-content {
-    display: flex;
-    width: 80vw;
-}
-
-.project-content h2 {
-    float: left;
-}
-
 .image-box {
     display: block;
     max-width: 100%;
@@ -297,14 +288,14 @@ figure {
 
 .project-block .container {
     display: flex;
-    width: 80vw;
+    width: 70vw;
     padding: 0;
     margin: 0;
 }
 
 
 .project-block-img {
-    max-width: 30vw;
+    max-width: 25vw;
     border: 2px solid #000;
     border-radius: 0.3em;
 }
