@@ -285,7 +285,7 @@ figure {
 .project-block {
     display: flex;
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     justify-content: center;
 }
 
@@ -333,6 +333,22 @@ figure {
     margin-right: 0.5em;
 }
 
+.to-top {
+    border-radius: 5rem;
+    width: 10vw;
+    color: white;
+    background-color: #555555;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    margin-left: 20vw;
+    margin-bottom: 2rem;
+}
+.to-top:hover {
+    background-color: #000000;
+}
+
+
 /* footer */
 footer {
     display: flex;
@@ -370,6 +386,8 @@ footer p {
 .black {
     color: #000;
 }
+
+
 
 
 /*fixes figcation overflowing*/
