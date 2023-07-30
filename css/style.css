@@ -196,7 +196,7 @@ figure {
     font-size: 3.5rem;
     padding: 0;
     margin: 3.5rem 0;
-    width: 80vw;
+    width: 70vw;
 }
 
 .about-block {
@@ -209,7 +209,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     padding-top: 0;
 }
@@ -227,7 +227,7 @@ figure {
 }
 
 .mypic {
-    max-height: 40vh;
+    max-height: 50vh;
     border: 2px solid #000;
     border-radius: 0.3em;
 }
