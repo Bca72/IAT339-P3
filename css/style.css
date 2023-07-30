@@ -306,7 +306,7 @@ figure {
 }
 
 .project-block figure {
-    margin: 0
+    margin: 0;
 }
 
 .project-block figure figcaption p {
@@ -318,16 +318,17 @@ figure {
 
 .project-block-text {
     margin: 0;
+    margin-bottom: 2rem;
 }
 
 .project-block-text h2{
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0;
 }
 .project-block-text p{
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     line-height: 1.4;
     margin-right: 0.5em;
 }
