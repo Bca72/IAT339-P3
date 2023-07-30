@@ -67,7 +67,8 @@
                 </div>
                 <figcaption>
                     <h2 class="project-title"><a href="daisy.html" class="REM">Daisy 7094</a></h2>
-                    <p class="project-description">An Interactive Arts installation</p>
+                    <p class="project-description">An Interactive Arts installation that turns the participants
+                        conversations into an artwork</p>
                 </figcaption>
             </figure>
 
@@ -77,7 +78,8 @@
                 </div>
                 <figcaption>
                     <h2 class="project-title"><a href="pavilion.html" class="REM">Park Pavilion</a></h2>
-                    <p class="project-description">A design for a park pavilion</p>
+                    <p class="project-description">A digital model of a park pavilion desgined and built using Rhino3D
+                    </p>
                 </figcaption>
             </figure>
         </section>
@@ -87,7 +89,8 @@
     <footer>
         <p><a class="black" href="index.html">Benson Chow</a> 2023</p>
         <div class="footer-links">
-            <a href="https://www.linkedin.com/in/benson-chow-83669b24a/" class="footer-link"><img src="icons/linkedin.svg"> </a>
+            <a href="https://www.linkedin.com/in/benson-chow-83669b24a/" class="footer-link"><img
+                    src="icons/linkedin.svg"> </a>
             <a href="citations.txt" class="un footer-link">Citations</a>
             <a href="styleguide.html" class="un footer-link">Style Guide</a>
             <a href="https://github.com/Bca72/IAT339-P3" class="un footer-link">Github</a>
@@ -99,26 +102,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
 
-    <script>
-        $(document).ready(function () {
-            if (window.location.hash != "#projects") {
-                setTimeout(function () {
-                    $('.arrow').removeClass('fade');
-                }, 6000);
-            }
-            $('.toggle-collapse').click(function () {
-                $('.navbar-collapse').toggleClass("collapse");
-            })
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                if (scroll >= 1) {
-                    $('.arrow').addClass('fade');
-                } else {
-                    $('.arrow').removeClass('fade');
-                }
-            })
-        });
-    </script>
+    <script src="js/myscripts.js"></script>
 
 
 </body>

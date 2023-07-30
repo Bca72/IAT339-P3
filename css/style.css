@@ -178,9 +178,12 @@ figure {
 }
 
 .project-description {
+    max-width: 100%;
     margin-top: 0;
+    margin-left: 0.5rem;
     margin-bottom: 2rem;
     font-size: 1.2rem;
+    word-wrap: break-word
 }
 
 .title {
@@ -369,3 +372,10 @@ footer p {
 .black {
     color: #000;
 }
+
+
+/*fixes figcation overflowing*/
+figure { display: table; }
+
+
+figcaption { display: table-caption; caption-side: bottom ; }
