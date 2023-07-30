@@ -149,6 +149,7 @@ nav img {
 .bg-light {
     background-color: var(--secondary-color);
 }
+
 .bg-white {
     background-color: white;
 }
@@ -169,6 +170,7 @@ figure {
     justify-content: center;
     padding: 0;
 }
+
 
 .project-title {
     font-size: 2rem;
@@ -251,7 +253,84 @@ figure {
     margin-left: 4rem;
 }
 
+.project-content {
+    display: flex;
+    width: 80vw;
+}
 
+.project-content h2 {
+    float: left;
+}
+
+.image-box {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 0.3em;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: 50em;
+    transition: all 0.3s;
+    display: block;
+    padding: 0;
+    transform: scale(1);
+    margin: 0;
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+
+.project-block {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8rem;
+    justify-content: center;
+}
+
+.project-block .container {
+    display: flex;
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+.project-block-img {
+    max-width: 30vw;
+    border: 2px solid #000;
+    border-radius: 0.3em;
+}
+
+.project-block figure {
+    margin: 0;
+}
+
+.project-block figure figcaption p {
+    max-width: 30vw;
+    padding: 0;
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.project-block-text {
+    margin: 1em 2em;
+}
+
+.project-block-text h2{
+    display: block;
+    font-size: 3rem;
+    margin: 0;
+}
+.project-block-text p{
+    display: block;
+    font-size: 1.7rem;
+    line-height: 1.4;
+}
 
 /* footer */
 footer {
@@ -290,6 +369,3 @@ footer p {
 .black {
     color: #000;
 }
-
-
-
