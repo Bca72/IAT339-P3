@@ -69,6 +69,42 @@
         max-width: 100vw;
     }
 
+    .project-block-img {
+        max-width: 100%;
+        border: 2px solid #000;
+        border-radius: 0.4em;
+    }
+    
+    .project-block figure {
+        margin: 0;
+    }
+    
+    .project-block figure figcaption p {
+        max-width: 20vw;
+        padding: 0;
+        margin: 1em 0 2em 0;
+        font-size: 1.3em;
+        font-style: italic;
+    }
+    
+    .project-block-text {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .project-block-text h2 {
+        display: block;
+        font-size: 2.2rem;
+        margin: 0;
+    }
+    
+    .project-block-text p {
+        display: block;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin-right: 0.5em;
+    }
+
     footer {
         border-top: 2px solid var(--light-gray);
         padding: 1rem;
@@ -119,6 +155,13 @@
 
     .title {
         text-align: center;
+        max-width: 100vw;
+    }
+    .title h1 {
+        font-size: 3.5rem;
+        padding: 0;
+        margin: 3.5rem 0;
+        width: 100vw;
     }
 
     .contact-block {
